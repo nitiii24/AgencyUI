@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ nav{
+  
+height: 10%;
+width: 100%;
+position: fixed;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 20px;
+padding-right: 20px;
+z-index: 999;
+} 
+
+
+ .tags{
+   
+    height: 100%;
+    width: calc(100%/3);
+    display: flex;
+     /* justify-content: center;  */
+    align-items: center;
+     /* gap: 20px;  */
+   
+} 
+ 
+ .middle p:nth-child(1){
+    color: grey;
+} 
+
+
+ /* .box{
+  border-radius: 20px;
+  padding-left: 5px ;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  background-color: black;
+  color: #FFFFFF;
+ 
+}  */
+
+.tags .circle{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+     display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative; 
+}
+
+.circle h1{
+    position: absolute;
+    bottom: -20%;
+    font-size: 40px;
+    scale: 1.2;
+}
+.middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+}
+ .right{
+  display: flex;
+    align-items: center;
+    justify-content: end;
+
+} 
+
+ .right button{
+  align-items: end;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding-left: 20px;
+padding-right: 20px;
+
+  background-color: black;
+   color: white ;
+} 
+
+  .hero{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 200px;
+    position: fixed;
+}
+
+.hero h1{
+  font-size: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #BEFF01;
+  overflow: hidden;
+  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.hero h2{
+  font-size: 80px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}
+
+.side {
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.side p{
+  gap: 50px;
+  rotate: -90deg;
+  
+}
